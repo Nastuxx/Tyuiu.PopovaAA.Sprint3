@@ -11,7 +11,7 @@ namespace Tyuiu.PopovaAA.Sprint3.Task2.V11.Lib
                 sumSeries = sumSeries + Math.Pow((1/3+Math.Pow(value, startValue)), startValue);
                 startValue++;
             }
-            while (startValue < stopValue);
+            while (startValue <= stopValue);
             return Math.Round(sumSeries, 3);
         }
     }
