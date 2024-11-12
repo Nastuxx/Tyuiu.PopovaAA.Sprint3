@@ -5,14 +5,13 @@ namespace Tyuiu.PopovaAA.Sprint3.Task2.V11.Lib
     {
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
-            double sumSeries = 0;
+            double SumSeries = 0;
             do
             {
-                sumSeries = sumSeries + Math.Pow((1/3+Math.Pow(value, startValue)), startValue);
+                SumSeries = SumSeries + (Math.Pow((1/3+Math.Pow(value, startValue)), startValue));
                 startValue++;
-            }
-            while (startValue <= stopValue);
-            return Math.Round(sumSeries, 3);
+            }while (startValue <= stopValue);
+            return Math.Round(SumSeries, 3);
         }
     }
 }
